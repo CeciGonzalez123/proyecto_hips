@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Nombre }}</title>
+</head>
+<body>
+    <h1>{{ Nombre }}</h1>
+    <h2>Usuarios Actuales</h2>
+    <ul>
+        {% for usuario in usuarios_actuales %}
+            <li>
+                <strong>Nombre de Usuario:</strong> {{ usuario.nombre_usuario }}<br>
+                <strong>Tipo de Conexión:</strong> {{ usuario.tipo_conexion }}<br>
+                <strong>Host:</strong> {{ usuario.host }}<br>
+                <strong>Hora de Inicio:</strong> {{ usuario.hora_inicio }}<br>
+                <strong>IP:</strong> {{ usuario.ip }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.inicio') }}">Volver</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

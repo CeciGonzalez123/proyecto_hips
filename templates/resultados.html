@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Nombre }}</title>
+</head>
+<body>
+    <h1>{{ Nombre }}</h1>
+    <ul>
+        {% for mensaje in mensajes %}
+            <li>{{ mensaje }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.inicio') }}">Volver</a>
+</body>
+</html>
+
+
+
+
+
+

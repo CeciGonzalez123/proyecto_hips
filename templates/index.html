@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Verificación</title>
+</head>
+<body>
+    <h1>Bienvenido al Sistema de Verificación</h1>
+    <ul>
+        <li><a href="{{ url_for('main.verificar_hashes') }}">Verificar Directorios</a></li>
+        <!-- <li><a href="{{ url_for('main.settings_logs') }}">Ajustes</a></li> -->
+        <li><a href="{{ url_for('main.verificar_usuarios_route') }}">Verificar Usuarios Conectados</a></li>
+        <li><a href="{{ url_for('main.verificar_procesos') }}">Verificar Procesos</a></li>
+        <li><a href="{{ url_for('main.verificar_tmp_route') }}">Verificar /tmp</a></li>
+        <li><a href="{{ url_for('main.verificar_logs_route') }}">Verificar Acceso Paginas</a></li>
+        <li><a href="{{ url_for('main.verificar_mails_route') }}">Verificar Envio Correos</a></li>
+        <li><a href="{{ url_for('main.verificar_autenticacion_route') }}">Verificar Autenticacion</a></li>
+        <li><a href="{{ url_for('main.verificar_ddos_route') }}">Verificación de Ataques DDoS</a></li>
+        <li><a href="{{ url_for('main.verificar_cron_route') }}">Verificación de Archivos Cron</a></li>
+        <li><a href="{{ url_for('main.verificar_accesos_no_validos_route') }}">Verificación de Accesos Validos</a></li>
+        <li><a href="{{ url_for('main.verificar_cola_correos_route') }}">Verificación de Cola de correos</a></li>
+        <li><a href="{{ url_for('main.verificar_sniffers_route') }}">Verificación de Sniffers y Modo Promiscuo</a></li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
