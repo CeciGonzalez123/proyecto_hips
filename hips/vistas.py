@@ -36,7 +36,7 @@ UMBRAL_DDOS = 5  # Ejemplo de máximo de entradas permitidas
 REMOTE_LOG_FILE = "/var/log/remote_connection.log"
 MAX_AUTH_ERRORS = 5
 
-UMBRAL_COLA_CORREOS = 1  # Ajustar esto según sea necesario
+UMBRAL_COLA_CORREOS = 10  # Ajustar esto según sea necesario
 
 
 
